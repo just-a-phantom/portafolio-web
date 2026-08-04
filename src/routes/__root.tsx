@@ -82,14 +82,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nathaly Torres Romero — Ingeniería Civil Informática" },
+      { title: "Nathaly Torres Romero — Ingeniera Civil Informática" },
       {
         name: "description",
         content:
           "Portafolio de Nathaly Torres Romero, Ingeniera Civil Informática (EC). Desarrollo soluciones inteligentes combinando Inteligencia Artificial, aplicaciones móviles e ingeniería de software.",
       },
       { name: "author", content: "Nathaly Torres Romero" },
-      { property: "og:title", content: "Nathaly Torres Romero — Ingeniería Civil Informática" },
+      { property: "og:title", content: "Nathaly Torres Romero — Ingeniera Civil Informática" },
       {
         property: "og:description",
         content:

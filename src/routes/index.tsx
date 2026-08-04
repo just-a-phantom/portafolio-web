@@ -13,13 +13,13 @@ import { Contact } from "../components/contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nathaly Torres Romero — Ingeniería Civil Informática" },
+      { title: "Nathaly Torres Romero — Ingeniera Civil Informática" },
       {
         name: "description",
         content:
           "Portafolio de Nathaly Torres Romero, Ingeniera Civil Informática (EC). Desarrollo soluciones inteligentes combinando IA, aplicaciones móviles e ingeniería de software.",
       },
-      { property: "og:title", content: "Nathaly Torres Romero — Ingeniería Civil Informática" },
+      { property: "og:title", content: "Nathaly Torres Romero — Ingeniera Civil Informática" },
       {
         property: "og:description",
         content:
