@@ -14,7 +14,7 @@ export const technologyGroups: TechGroup[] = [
   },
   {
     name: "Mobile",
-    items: ["React Native", "Expo"],
+    items: ["Flutter"],
   },
   {
     name: "IA / Datos",
@@ -26,10 +26,10 @@ export const technologyGroups: TechGroup[] = [
   },
   {
     name: "Cloud / DevOps",
-    items: ["Docker", "GitHub Actions", "Vercel"],
+    items: ["Docker", "Render", "Vercel"],
   },
   {
     name: "Herramientas",
-    items: ["Git", "GitHub", "Figma", "VS Code", "Jira"],
+    items: ["Git", "GitHub", "Figma", "VS Code", "Jira", "Trello"],
   },
 ];
