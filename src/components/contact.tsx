@@ -20,7 +20,7 @@ const channels = [
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/nathalytorres",
+    value: "github.com/just-a-phantom",
     href: site.github,
     external: true,
   },

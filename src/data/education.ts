@@ -9,7 +9,7 @@ export const education: EducationItem[] = [
   {
     institution: "Universidad Autónoma de Chile",
     degree: "Ingeniería Civil Informática",
-    period: "2021 — Presente",
+    period: "2022 — Presente",
     details: [
       "Formación en ingeniería de software, inteligencia artificial y sistemas computacionales.",
       "Asistente de investigación en Robótica e Industria 4.0.",

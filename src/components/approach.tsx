@@ -28,7 +28,7 @@ export function Approach() {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
           <FadeIn>
-            <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <div className="space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
               <p>
                 Ingeniera Civil Informática (EC). Me motiva crear productos donde la calidad técnica y la experiencia
                 humana vayan de la mano.
@@ -50,9 +50,9 @@ export function Approach() {
           <StaggerContainer className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
             {focusCards.map((card) => (
               <StaggerItem key={card.title}>
-                <div className="rounded-2xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:bg-accent/40">
-                  <h3 className="font-heading text-lg font-semibold text-foreground">{card.title}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-muted-foreground">{card.body}</p>
+                <div className="rounded-2xl border border-border bg-card p-5 transition-all hover:border-primary/30 hover:bg-accent/40 md:p-6">
+                  <h3 className="font-heading text-base font-semibold text-foreground md:text-lg">{card.title}</h3>
+                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground md:text-sm">{card.body}</p>
                 </div>
               </StaggerItem>
             ))}

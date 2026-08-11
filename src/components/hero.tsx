@@ -6,7 +6,7 @@ import { site } from "../data/site";
 
 export function Hero() {
   return (
-    <section className="relative flex items-center overflow-hidden pt-20 pb-10 md:min-h-[68vh]">
+    <section className="relative flex items-center overflow-hidden py-16 md:py-24">
       <div className="container-tight relative z-10">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <div className="max-w-2xl">
@@ -34,7 +34,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-5 text-lg leading-relaxed text-foreground/90 md:text-xl"
+              className="mt-4 text-base leading-relaxed text-foreground/80 md:text-lg"
             >
               {site.tagline}
             </motion.p>
@@ -43,7 +43,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-7 flex flex-wrap items-center gap-3"
+              className="mt-6 flex flex-wrap items-center gap-3"
             >
               <Button asChild size="default" className="rounded-full px-5 text-sm">
                 <Link to="/#proyectos">
@@ -83,7 +83,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-5 text-base text-muted-foreground"
+              className="mt-4 text-base text-muted-foreground"
             >
               {site.institution}
             </motion.p>
