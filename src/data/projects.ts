@@ -60,7 +60,7 @@ export const projects: Project[] = [
       "Plataforma de monitoreo y alertas para seguridad o continuidad operativa, con backend robusto y frontend reactivo.",
     description:
       "Sentinel es una plataforma web de monitoreo que centraliza datos, detecta anomalías y notifica a los responsables en tiempo real. Fue diseñada para ser escalable, segura y fácil de operar.",
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "WebSockets"],
+    technologies: ["React", "Node.js", "PostgreSQL", "WebSockets"],
     problem:
       "La falta de visibilidad centralizada dificulta reaccionar ante incidentes de seguridad o fallas operativas.",
     objectives: [

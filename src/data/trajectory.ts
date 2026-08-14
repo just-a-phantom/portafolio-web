@@ -65,7 +65,7 @@ export const trajectoryItems: TrajectoryItem[] = [
     type: "Proyecto",
     description:
       "Desarrollo full stack de una plataforma de monitoreo con alertas en tiempo real, dashboard reactivo y trazabilidad de incidentes.",
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "WebSockets"],
+    technologies: ["React", "Node.js", "PostgreSQL", "WebSockets"],
   },
   {
     id: "robotica-industria-4",
