@@ -86,7 +86,7 @@ export const projects: Project[] = [
       "Aplicación móvil centrada en la experiencia de usuario, con flujos claros, diseño accesible y sincronización de datos.",
     description:
       "Lilium App es una aplicación móvil pensada para resolver una necesidad cotidiana con una interfaz limpia y un flujo intuitivo. El proyecto prioriza la usabilidad, el rendimiento y la sincronización confiable de datos.",
-    technologies: ["React Native", "TypeScript", "Firebase", "Expo"],
+    technologies: ["Flutter", "Dart", "Firebase"],
     problem:
       "Las apps existentes en el espacio no ofrecían una experiencia fluida y accesible para el público objetivo.",
     objectives: [

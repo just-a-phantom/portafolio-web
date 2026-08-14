@@ -48,14 +48,24 @@ export const trajectoryItems: TrajectoryItem[] = [
     images: ["/__l5e/assets-v1/cafbf6d3-e360-40d1-8761-6a89eb855158/neurofest-nath.jpeg"],
   },
   {
-    id: "aigc-titulo",
-    title: "AIGC — Proyecto de Título",
-    date: "2025-01-01",
+    id: "feria-requinoa",
+    title: "Feria Comunal del Arte, Ciencia y Tecnología",
+    date: "2024-11-09",
+    location: "Requínoa, Chile",
+    type: "Feria Tecnológica",
+    description:
+      "Exposición de proyectos tecnológicos en la Feria Tecnológica de Requínoa, compartiendo avances de investigación y desarrollo con la comunidad local.",
+    technologies: ["Divulgación tecnológica", "Prototipos", "Comunidad"],
+  },
+  {
+    id: "liliumapp",
+    title: "Lilium App — Aplicación Móvil",
+    date: "2024-05-01",
     location: "Universidad Autónoma de Chile",
     type: "Proyecto",
     description:
-      "Investigación aplicada en modelos generativos de inteligencia artificial. El proyecto abarca la curación de datos, entrenamiento, evaluación y despliegue de una solución generativa en un dominio técnico específico.",
-    technologies: ["Python", "PyTorch", "Transformers", "FastAPI", "Docker"],
+      "Desarrollo de una plataforma de monitoreo ante casos de acoso con alertas en tiempo real y trazabilidad de incidentes.",
+    technologies: ["Flutter", "Dart", "Firebase"],
   },
   {
     id: "sentinel",
@@ -70,7 +80,7 @@ export const trajectoryItems: TrajectoryItem[] = [
   {
     id: "robotica-industria-4",
     title: "Asistente de Investigación — Robótica e Industria 4.0",
-    date: "2024-03-01",
+    date: "2025-03-01",
     location: "Universidad Autónoma de Chile",
     type: "Proyecto",
     description:
@@ -80,7 +90,7 @@ export const trajectoryItems: TrajectoryItem[] = [
   {
     id: "taller-robotica",
     title: "Talleres de Robótica",
-    date: "2024-05-01",
+    date: "2025-05-01",
     location: "Universidad Autónoma de Chile",
     type: "Taller",
     description:
@@ -88,14 +98,14 @@ export const trajectoryItems: TrajectoryItem[] = [
     technologies: ["Robótica educativa", "Programación", "Divulgación"],
   },
   {
-    id: "feria-requinoa",
-    title: "Feria Tecnológica de Requínoa",
-    date: "2024-11-01",
-    location: "Requínoa, Chile",
-    type: "Feria Tecnológica",
+    id: "aigc-titulo",
+    title: "AIGC — Proyecto de Título",
+    date: "2026-08-01",
+    location: "Universidad Autónoma de Chile",
+    type: "Proyecto",
     description:
-      "Exposición de proyectos tecnológicos en la Feria Tecnológica de Requínoa, compartiendo avances de investigación y desarrollo con la comunidad local.",
-    technologies: ["Divulgación tecnológica", "Prototipos", "Comunidad"],
+      "Iniciativa de investigación aplicada en modelos generativos de inteligencia artificial. El proyecto abarca la curación de datos, entrenamiento, evaluación y despliegue de una solución generativa en un dominio técnico específico.",
+    technologies: ["Python", "PyTorch", "Transformers", "FastAPI", "Docker"],
   },
   {
     id: "practica-futuro",
