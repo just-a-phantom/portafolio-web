@@ -45,7 +45,7 @@ export const trajectoryItems: TrajectoryItem[] = [
     description:
       "Participación en la primera Feria del Cerebro organizada por la Universidad de Chile y la Universidad de Santiago (Usach), que congregó a 5 mil personas en torno a la neurociencia. La actividad reunió a estudiantes de enseñanza básica y media, profesores, familias, niños, jóvenes, adultos y adultos mayores.",
     technologies: ["Divulgación científica", "Neurociencia", "Tecnología educativa"],
-    images: ["/__l5e/assets-v1/cafbf6d3-e360-40d1-8761-6a89eb855158/neurofest-nath.jpeg"],
+    images: ["src/assets/neurofest-2024.jpeg"],
   },
   {
     id: "feria-requinoa",

@@ -65,13 +65,23 @@ export function Projects() {
           </div>
         </FadeIn>
 
-        <StaggerContainer className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <AnimatePresence mode="popLayout">
             {filtered.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+              <motion.div
+                key={project.slug}
+                layout
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.35 }}
+                className="h-full"
+              >
+                <ProjectCard project={project} />
+              </motion.div>
             ))}
           </AnimatePresence>
-        </StaggerContainer>
+        </div>
 
         {filtered.length === 0 && (
           <FadeIn>
@@ -97,64 +107,55 @@ export function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <StaggerItem>
-      <motion.article
-        layout
-        initial={{ opacity: 0, scale: 0.98 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.98 }}
-        transition={{ duration: 0.35 }}
-        className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-lg"
-      >
-        <div className="relative aspect-[16/10] bg-gradient-to-br from-accent-subtle/50 to-surface p-6">
-          <div className="flex h-full items-center justify-center">
-            <ProjectIcon title={project.title} />
-          </div>
-          <div className="absolute top-4 left-4">
-            <Badge variant="secondary" className="rounded-full">
-              {project.category}
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-lg">
+      <div className="relative aspect-[16/10] bg-gradient-to-br from-accent-subtle/50 to-surface p-6">
+        <div className="flex h-full items-center justify-center">
+          <ProjectIcon title={project.title} />
+        </div>
+        <div className="absolute top-4 left-4">
+          <Badge variant="secondary" className="rounded-full">
+            {project.category}
+          </Badge>
+        </div>
+      </div>
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="font-heading text-xl font-semibold text-foreground">{project.title}</h3>
+        <p className="mt-2 line-clamp-2 text-base leading-relaxed text-muted-foreground">
+          {project.summary}
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {project.technologies.slice(0, 4).map((tech) => (
+            <Badge key={tech} variant="outline" className="rounded-full text-sm font-normal">
+              {tech}
             </Badge>
+          ))}
+        </div>
+        <div className="mt-auto flex items-center justify-between pt-5">
+          <Button asChild variant="ghost" size="sm" className="group/btn p-0 hover:bg-transparent">
+            <Link to="/proyectos/$slug" params={{ slug: project.slug }}>
+              Ver caso de estudio
+              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+            </Link>
+          </Button>
+          <div className="flex items-center gap-1">
+            {project.github && (
+              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full" asChild>
+                <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <Github className="h-4 w-4" />
+                </a>
+              </Button>
+            )}
+            {project.demo && (
+              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full" asChild>
+                <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label="Demo">
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              </Button>
+            )}
           </div>
         </div>
-        <div className="flex flex-1 flex-col p-6">
-          <h3 className="font-heading text-xl font-semibold text-foreground">{project.title}</h3>
-          <p className="mt-2 line-clamp-2 text-base leading-relaxed text-muted-foreground">
-            {project.summary}
-          </p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {project.technologies.slice(0, 4).map((tech) => (
-              <Badge key={tech} variant="outline" className="rounded-full text-sm font-normal">
-                {tech}
-              </Badge>
-            ))}
-          </div>
-          <div className="mt-auto flex items-center justify-between pt-5">
-            <Button asChild variant="ghost" size="sm" className="group/btn p-0 hover:bg-transparent">
-              <Link to="/proyectos/$slug" params={{ slug: project.slug }}>
-                Ver caso de estudio
-                <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-              </Link>
-            </Button>
-            <div className="flex items-center gap-1">
-              {project.github && (
-                <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full" asChild>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <Github className="h-4 w-4" />
-                  </a>
-                </Button>
-              )}
-              {project.demo && (
-                <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full" asChild>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label="Demo">
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                </Button>
-              )}
-            </div>
-          </div>
-        </div>
-      </motion.article>
-    </StaggerItem>
+      </div>
+    </article>
   );
 }
 
