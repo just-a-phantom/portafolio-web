@@ -10,7 +10,7 @@ export const technologyGroups: TechGroup[] = [
   },
   {
     name: "Backend",
-    items: ["Node.js", "FastAPI", "Python"],
+    items: ["Node.js", "Django", "FastAPI", "Python"],
   },
   {
     name: "Mobile",

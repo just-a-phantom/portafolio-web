@@ -58,26 +58,6 @@ export const trajectoryItems: TrajectoryItem[] = [
     technologies: ["Divulgación tecnológica", "Prototipos", "Comunidad"],
   },
   {
-    id: "liliumapp",
-    title: "Lilium App — Aplicación Móvil",
-    date: "2024-05-01",
-    location: "Universidad Autónoma de Chile",
-    type: "Proyecto",
-    description:
-      "Desarrollo de una plataforma de monitoreo ante casos de acoso con alertas en tiempo real y trazabilidad de incidentes.",
-    technologies: ["Flutter", "Dart", "Firebase"],
-  },
-  {
-    id: "sentinel",
-    title: "Sentinel — Plataforma de Monitoreo",
-    date: "2024-06-01",
-    location: "Universidad Autónoma de Chile",
-    type: "Proyecto",
-    description:
-      "Desarrollo full stack de una plataforma de monitoreo con alertas en tiempo real, dashboard reactivo y trazabilidad de incidentes.",
-    technologies: ["React", "Node.js", "PostgreSQL", "WebSockets"],
-  },
-  {
     id: "robotica-industria-4",
     title: "Asistente de Investigación — Robótica e Industria 4.0",
     date: "2025-03-01",
@@ -88,6 +68,17 @@ export const trajectoryItems: TrajectoryItem[] = [
     technologies: ["Robótica", "Industria 4.0", "Investigación aplicada"],
   },
   {
+    id: "liliumapp",
+    title: "Lilium App — Aplicación Móvil",
+    date: "2025-04-01",
+    location: "Universidad Autónoma de Chile",
+    type: "Proyecto",
+    description:
+      "Desarrollo de una plataforma de monitoreo ante casos de acoso con alertas en tiempo real y trazabilidad de incidentes.",
+    technologies: ["Flutter", "Dart", "Firebase"],
+  },
+
+  {
     id: "taller-robotica",
     title: "Talleres de Robótica",
     date: "2025-05-01",
@@ -96,6 +87,16 @@ export const trajectoryItems: TrajectoryItem[] = [
     description:
       "Participación en talleres de robótica orientados a estudiantes y comunidad, promoviendo el aprendizaje práctico de tecnología y programación.",
     technologies: ["Robótica educativa", "Programación", "Divulgación"],
+  },
+    {
+    id: "sentinel",
+    title: "Sentinel — Plataforma de Monitoreo",
+    date: "2025-08-01",
+    location: "Universidad Autónoma de Chile",
+    type: "Proyecto",
+    description:
+      "Desarrollo full stack de una plataforma de monitoreo con alertas en tiempo real, dashboard reactivo y trazabilidad de incidentes.",
+    technologies: ["React", "Node.js", "PostgreSQL", "WebSockets"],
   },
   {
     id: "aigc-titulo",
