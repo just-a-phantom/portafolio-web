@@ -7,6 +7,6 @@ export const site = {
   email: "nathaly.torres.1934@gmail.com",
   linkedin: "https://www.linkedin.com/in/nathaly-torres-1383123b8",
   github: "https://github.com/just-a-phantom",
-  cv: "#cv-placeholder",
+  cv: "public/nathaly-torres-romero-cv.pdf",
   focusStatement: "Construyendo tecnología con propósito: robusta, intuitiva y escalable.",
 } as const;
