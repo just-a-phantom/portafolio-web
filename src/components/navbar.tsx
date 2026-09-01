@@ -4,6 +4,7 @@ import { Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "./theme-provider";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "./ui/sheet";
+import { Terminal } from "lucide-react";
 
 const navLinks = [
   { label: "Inicio", to: "/" },
@@ -58,11 +59,13 @@ export function Navbar() {
       }`}
     >
       <nav className="container-tight flex h-12 items-center justify-between md:h-14">
-        <Link
-          to="/"
-          className="font-heading text-base font-semibold tracking-tight text-foreground md:text-lg"
-        >
-          Nathaly Torres
+        <Link to="/" className="group flex items-center gap-2.5">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-primary/20 bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary/20">
+            <Terminal className="h-4 w-4 transition-transform group-hover:scale-110" />
+          </div>
+          <span className="font-heading text-xl font-semibold text-foreground">
+            Nathaly Torres
+          </span>
         </Link>
 
         <div className="hidden items-center gap-0.5 md:flex">
