@@ -43,51 +43,56 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-6 flex flex-wrap items-center gap-3"
+              className="mt-6 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
             >
-              <Button asChild size="default" className="rounded-full px-5 text-sm">
-                <Link to="/#proyectos">
-                  Ver proyectos
-                  <ArrowDown className="ml-1 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="default"
-                className="rounded-full border-primary/50 px-5 text-sm text-foreground hover:bg-primary/10 hover:text-foreground"
-              >
-                <a href={site.cv} download>
-                  <Download className="mr-1 h-4 w-4" />
-                  Descargar CV
-                </a>
-              </Button>
-              <Button asChild variant="ghost" size="icon" className="h-9 w-9 rounded-full">
-                <a
-                  href={site.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
+              <div className="flex w-full flex-row gap-2 min-[450px]:flex-row sm:w-auto">
+                <Button asChild size="default" className="w-full rounded-full px-5 text-sm min-[450px]:w-auto">
+                  <Link to="/#proyectos">
+                    Ver proyectos
+                    <ArrowDown className="ml-1 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="default"
+                  className="w-full rounded-full border-primary/50 px-5 text-sm text-foreground hover:bg-primary/10 hover:text-foreground min-[450px]:w-auto"
                 >
-                  <Linkedin className="h-4 w-4" />
-                </a>
-              </Button>
-              <Button asChild variant="ghost" size="icon" className="h-9 w-9 rounded-full">
-                <a href={`mailto:${site.email}`} aria-label="Correo electrónico">
-                  <Mail className="h-4 w-4" />
-                </a>
-              </Button>
+                  <a href={site.cv} download>
+                    <Download className="mr-1 h-4 w-4" />
+                    Descargar CV
+                  </a>
+                </Button>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <Button asChild variant="ghost" size="icon" className="h-9 w-9 rounded-full">
+                  <a
+                    href={site.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                </Button>
+                <Button asChild variant="ghost" size="icon" className="h-9 w-9 rounded-full">
+                  <a href={`mailto:${site.email}`} aria-label="Correo electrónico">
+                    <Mail className="h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
             </motion.div>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-4 text-base text-muted-foreground"
-            >
-              {site.institution}
-            </motion.p>
           </div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-8 text-sm font-medium text-muted-foreground/80"
+          >
+            {site.institution}
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}

@@ -8,7 +8,7 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
-    src: "src/assets/neurofest-2024.jpeg",
+    src: "public/neurofest-2024.jpeg",
     alt: "Nathaly Torres en Neurofest 2024 ajustando un casco de EEG",
     caption: "Ajustando el casco de EEG durante Neurofest 2024.",
     event: "Neurofest 2024",
