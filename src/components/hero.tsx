@@ -47,7 +47,7 @@ export function Hero() {
             >
               <div className="flex w-full flex-row gap-2 min-[450px]:flex-row sm:w-auto">
                 <Button asChild size="default" className="w-full rounded-full px-5 text-sm min-[450px]:w-auto">
-                  <Link to="/#proyectos">
+                  <Link to="/" hash="proyectos">
                     Ver proyectos
                     <ArrowDown className="ml-1 h-4 w-4" />
                   </Link>
@@ -83,16 +83,15 @@ export function Hero() {
                 </Button>
               </div>
             </motion.div>
-          </div>
-
-          <motion.p
+            <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-8 text-sm font-medium text-muted-foreground/80"
+            className="mt-5 text-sm font-medium text-muted-foreground/80"
           >
             {site.institution}
           </motion.p>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
