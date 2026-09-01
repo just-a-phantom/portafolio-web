@@ -8,13 +8,13 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    name: "Machine Learning Specialization",
-    issuer: "Stanford Online / DeepLearning.AI",
+    name: "AWS Cloud Practitioner",
+    issuer: "Amazon Web Services",
     status: "En progreso",
   },
   {
-    name: "AWS Cloud Practitioner",
-    issuer: "Amazon Web Services",
+    name: "Machine Learning Specialization",
+    issuer: "Stanford Online / DeepLearning.AI",
     status: "En progreso",
   },
 ];
