@@ -114,7 +114,7 @@ export function Navbar() {
                   <SheetClose key={link.to} asChild>
                     <Link
                       to={link.to}
-                      className={`rounded-lg px-4 py-2.5 text-base font-medium transition-colors ${
+                      className={`block w-full rounded-lg px-4 py-4 text-base font-medium transition-colors ${
                         isActive(link.to)
                           ? "bg-accent text-accent-foreground"
                           : "text-foreground hover:bg-accent/50"
