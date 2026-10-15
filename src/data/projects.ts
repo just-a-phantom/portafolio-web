@@ -1,7 +1,7 @@
 export interface Project {
   slug: string;
   title: string;
-  category: "IA" | "Móvil" | "Web" | "Full Stack";
+  category: "IA" | "Móvil" | "Web" | "Full Stack" | "IoT" | "Data Science";
   role: string;
   summary: string;
   description: string;
@@ -21,34 +21,40 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "aigc",
-    title: "AIGC — Proyecto de Título",
-    category: "IA",
-    role: "Investigadora y desarrolladora",
+    slug: "hydrotrack-c",
+    title: "HydroTrack-C",
+    category: "IoT",
+    role: "Arquitecta de Software e IoT (En Desarrollo)",
     summary:
-      "Sistema de generación asistida por inteligencia artificial orientado a resolver un problema específico de dominio mediante modelos generativos.",
+      "Proyecto de Título en desarrollo: Sistema de telemetría y monitoreo hídrico basado en redes LoRaWAN y plataforma web para la captura y visualización de datos ambientales",
     description:
-      "AIGC es mi Proyecto de Título: una investigación aplicada que explora cómo los modelos generativos pueden resolver necesidades concretas dentro de un dominio técnico definido. El trabajo abarca desde la recolección y curación de datos hasta el entrenamiento, evaluación y despliegue de un modelo funcional.",
+      "HydroTrack-C es mi Proyecto de Título que estoy desarrollando actualmente: un sistema de monitoreo hídrico que abarca desde la recolección de datos en terreno mediante sensores y redes de bajo consumo LoraWAN, hasta la conceptualización de una plataforma web para la visualización interactiva de métricas ambientales. El proyecto busca optimizar la gestión de recursos hídricos en zonas remotas mediante la integración de hardware, software y conectividad eficiente.",
     problem:
-      "Generar contenido o respuestas de calidad en un dominio especializado requiere modelos adaptados y datos representativos, algo difícil de lograr con soluciones genéricas.",
+      "La falta de monitoreo hídrico automatizado y en tiempo real en zonas remotas dificulta la gestión eficiente y preventiva de los recursos hídricos.",
     objectives: [
-      "Diseñar una arquitectura generativa adecuada al dominio del problema.",
-      "Construir un pipeline de datos reproducible y escalable.",
-      "Evaluar el modelo con métricas técnicas y validación humana.",
+      "Diseñar la arquitectura de software y la topología de red LoRaWAN del sistema.",
+      "Especificar e integrar componentes de hardware (microcontroladores Arduino y sensores).",
+      "Definir los requerimientos de la plataforma web para la visualización en tiempo real y gestión de datos hídricos.",
     ],
-    technologies: ["Python", "PyTorch", "Transformers", "FastAPI", "Docker"],
+    architecture: [
+      "Nodos Sensóricos (Arduino + Sensores hídricos)",
+      "Red de transporte LoRaWAN",
+      "Servidor de ingesta y procesamiento de datos",
+      "Plataforma Web / Dashboard de visualización",
+    ],
+    technologies: ["IoT", "LoRaWAN", "Arduino", "C/C++", "Sensórica", "Web Dashboard", "API REST"],
     challenges:
-      "Entrenar modelos generativos con recursos limitados y asegurar que las salidas sean coherentes, útiles y alineadas con el dominio.",
+      "Asegurar la trazabilidad completa del dato  en zonas con infraestructura limitada: desde la captura en hardware de bajo consumo hasta su representación gráfica en la interfaz web.",
     solution:
-      "Pipeline modular de datos, fine-tuning selectivo y evaluación continua con métricas automáticas y revisión humana.",
+      "Diseño de una red LoRaWAN acoplada a una arquitectura de software modular para la recolección, transmisión y gestión eficiente de métricas hídricas.",
     results: [
-      "Modelo ajustado al dominio del proyecto.",
-      "Pipeline reproducible documentado.",
-      "Base para futura publicación o producto.",
+      "Fase actual: Diseño de arquitectura end-to-end y topología de red en proceso.",
+      "Especificaciones de hardware y requerimientos del portal web definidos.",
+      "Base técnica en preparación para la integración del prototipo físico y la interfaz web.",
     ],
     lessons: [
-      "La calidad del dataset importa más que el tamaño del modelo.",
-      "La evaluación humana es indispensable en sistemas generativos.",
+      "En sistemas IoT, la eficiencia energética y la topología de red son tan críticas como el software.",
+      "La modularidad en la arquitectura facilita la integración de múltiples tipos de sensores.",
     ],
   },
   {

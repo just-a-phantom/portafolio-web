@@ -5,6 +5,6 @@ export interface CurrentStatusItem {
 
 export const currentStatus: CurrentStatusItem[] = [
   { icon: "book", label: "Estudiante de Ingeniería Civil Informática" },
-  { icon: "rocket", label: "Desarrollando AIGC (Proyecto de Título)" },
+  { icon: "rocket", label: "Desarrollando HydroTrack-C (Proyecto de Título)" },
   { icon: "search", label: "Buscando práctica profesional para 2027" },
 ];

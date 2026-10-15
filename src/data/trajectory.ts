@@ -99,14 +99,14 @@ export const trajectoryItems: TrajectoryItem[] = [
     technologies: ["React", "Node.js", "PostgreSQL", "WebSockets"],
   },
   {
-    id: "aigc-titulo",
-    title: "AIGC — Proyecto de Título",
+    id: "hydrotrack-c",
+    title: "HydroTrack-C — Proyecto de Título",
     date: "2026-08-01",
     location: "Universidad Autónoma de Chile",
     type: "Proyecto",
     description:
-      "Iniciativa de investigación aplicada en modelos generativos de inteligencia artificial. El proyecto abarca la curación de datos, entrenamiento, evaluación y despliegue de una solución generativa en un dominio técnico específico.",
-    technologies: ["Python", "PyTorch", "Transformers", "FastAPI", "Docker"],
+      "Proyecto de título en desarrollo: diseño de arquitectura de software y topología de red LoRaWAN para un sistema de telemetría y monitoreo hídrico con plataforma web de visualización.",
+    technologies: ["IoT", "LoRaWAN", "Arduino", "Sensórica", "Web Dashboard"],
   },
   {
     id: "practica-futuro",
