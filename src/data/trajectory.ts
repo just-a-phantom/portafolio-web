@@ -69,15 +69,14 @@ export const trajectoryItems: TrajectoryItem[] = [
   },
   {
     id: "liliumapp",
-    title: "Lilium App — Aplicación Móvil",
+    title: "LiliumApp — Aplicación Móvil",
     date: "2025-04-01",
     location: "Universidad Autónoma de Chile",
     type: "Proyecto",
     description:
-      "Desarrollo de una plataforma de monitoreo ante casos de acoso con alertas en tiempo real y trazabilidad de incidentes.",
-    technologies: ["Flutter", "Dart", "Firebase"],
+      "Participación en la creación de una aplicación móvil camuflada (Flutter/Dart) con interfaz dual de seguimiento de hábitos para la prevención del acoso escolar. Colaboración en la lógica en segundo plano para el monitoreo de hardware nativo (micrófono y acelerómetro).",
+    technologies: ["Flutter", "Dart", "Firebase", "Sensores Nativos"],
   },
-
   {
     id: "taller-robotica",
     title: "Talleres de Robótica",
@@ -88,15 +87,15 @@ export const trajectoryItems: TrajectoryItem[] = [
       "Participación en talleres de robótica orientados a estudiantes y comunidad, promoviendo el aprendizaje práctico de tecnología y programación.",
     technologies: ["Robótica educativa", "Programación", "Divulgación"],
   },
-    {
+  {
     id: "sentinel",
     title: "Sentinel — Plataforma de Monitoreo",
     date: "2025-08-01",
     location: "Universidad Autónoma de Chile",
     type: "Proyecto",
     description:
-      "Desarrollo full stack de una plataforma de monitoreo con alertas en tiempo real, dashboard reactivo y trazabilidad de incidentes.",
-    technologies: ["React", "Node.js", "PostgreSQL", "WebSockets"],
+      "Desarrollo grupal de una plataforma híbrida de seguridad laboral (Ley Karin). Desarrollo íntegro del módulo backend de carga masiva en Google Cloud Functions y diseño de dashboards interactivos en React.",
+    technologies: ["React", "Google Cloud Functions", "Firebase", "Tailwind CSS"],
   },
   {
     id: "hydrotrack-c",

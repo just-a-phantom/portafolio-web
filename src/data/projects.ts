@@ -61,51 +61,68 @@ export const projects: Project[] = [
     slug: "sentinel",
     title: "Sentinel",
     category: "Full Stack",
-    role: "Desarrolladora full stack",
+    role: "Desarrolladora de Datos y Backend (Proyecto Grupal)",
     summary:
-      "Plataforma de monitoreo y alertas para seguridad o continuidad operativa, con backend robusto y frontend reactivo.",
+      "Plataforma híbrida de seguridad laboral para prevención y reporte confidencial de incidencias (Ley Karin), con ingesta masiva y dashboards en tiempo real.",
     description:
-      "Sentinel es una plataforma web de monitoreo que centraliza datos, detecta anomalías y notifica a los responsables en tiempo real. Fue diseñada para ser escalable, segura y fácil de operar.",
-    technologies: ["React", "Node.js", "PostgreSQL", "WebSockets"],
+      "Sentinel es una plataforma híbrida (móvil y web) orientada al monitoreo de seguridad y prevención de acoso laboral bajo el marco de la Ley Karin. Incluye un módulo backend serverless para la gestión masiva de datos y un portal de administración para el análisis de evidencias y generación de informes.",
     problem:
-      "La falta de visibilidad centralizada dificulta reaccionar ante incidentes de seguridad o fallas operativas.",
+      "Las organizaciones requieren canales seguros y confidenciales para la carga e identificación de incidencias laborales, con trazabilidad visual para la toma de decisiones.",
     objectives: [
-      "Centralizar eventos críticos en un dashboard en tiempo real.",
-      "Automatizar alertas por umbrales configurables.",
-      "Mantener trazabilidad de incidentes.",
+      "Desarrollar el módulo backend para la carga masiva y segura de datos de usuarios e incidencias.",
+      "Diseñar dashboards interactivos y el sistema de informes visuales para la gestión de la plataforma.",
+      "Conectar la ingesta de la app móvil con la plataforma administrativa web.",
     ],
-    architecture: ["Frontend React", "API REST en Node.js", "Base de datos PostgreSQL", "WebSockets para alertas"],
+    architecture: [
+      "Aplicación Móvil de usuarios (captura de evidencias)",
+      "Google Cloud Functions (backend serverless para carga masiva)",
+      "Base de Datos en Firebase",
+      "Dashboard Web Administrativo en React",
+    ],
+    technologies: ["React", "Google Cloud Functions", "Firebase", "Tailwind CSS", "TypeScript"],
     solution:
-      "Arquitectura en capas con autenticación, roles, notificaciones en tiempo real y persistencia de eventos.",
-    results: ["Dashboard operativo en tiempo real.", "Sistema de alertas configurables.", "Historial completo de incidentes."],
+      "Desarrollo íntegro del módulo backend de carga masiva en Google Cloud Functions y diseño de tableros gráficos interactivos en React para visualización de métricas e informes.",
+    results: [
+      "Módulo de procesamiento e ingesta masiva de usuarios e incidencias implementado.",
+      "Dashboards interactivos operativos para el monitoreo visual del estado de la plataforma.",
+    ],
     lessons: [
-      "Diseñar para observabilidad desde el día uno.",
-      "Las alertas útiles necesitan contexto, no solo datos.",
+      "El manejo de información confidencial requiere arquitecturas desacopladas y serverless.",
+      "Los dashboards ejecutivos deben estructurar datos complejos en vistas simples e intuitivas.",
     ],
   },
   {
     slug: "lilium-app",
-    title: "Lilium App",
+    title: "LiliumApp",
     category: "Móvil",
-    role: "Desarrolladora mobile",
+    role: "Desarrolladora Móvil (Proyecto Grupal)",
     summary:
-      "Aplicación móvil centrada en la experiencia de usuario, con flujos claros, diseño accesible y sincronización de datos.",
+      "Aplicación móvil camuflada de prevención de acoso escolar con interfaz dual de seguimiento de hábitos y monitoreo de hardware nativo.",
     description:
-      "Lilium App es una aplicación móvil pensada para resolver una necesidad cotidiana con una interfaz limpia y un flujo intuitivo. El proyecto prioriza la usabilidad, el rendimiento y la sincronización confiable de datos.",
-    technologies: ["Flutter", "Dart", "Firebase"],
+      "LiliumApp es una aplicación móvil diseñada para prevenir y alertar situaciones de acoso escolar. Se enmascara bajo una interfaz inocua de seguimiento de hábitos y ejecuta procesos en segundo plano para analizar sensores físicos (micrófono y acelerómetro), enviando notificaciones de emergencia automatizadas.",
     problem:
-      "Las apps existentes en el espacio no ofrecían una experiencia fluida y accesible para el público objetivo.",
+      "Las víctimas de acoso escolar temen utilizar aplicaciones visibles de emergencia por el riesgo de ser descubiertas por sus agresores.",
     objectives: [
-      "Diseñar una interfaz móvil clara y accesible.",
-      "Garantizar sincronización offline/online.",
-      "Iterar rápido con feedback de usuarios reales.",
+      "Diseñar una interfaz dual camuflada (tracker de hábitos) para resguardar la privacidad del estudiante.",
+      "Programar la lógica en segundo plano para el monitoreo de hardware nativo (micrófono y acelerómetro).",
+      "Automatizar la transmisión de alertas en tiempo real ante aumentos anómalos de decibeles o movimiento.",
     ],
+    architecture: [
+      "Interfaz Móvil Dual (Flutter / Dart)",
+      "Servicios nativos en segundo plano (análisis de micrófono y acelerómetro)",
+      "Base de Datos / Autenticación en Firebase",
+      "Integración de alertas con API de mensajería (WhatsApp)",
+    ],
+    technologies: ["Flutter", "Dart", "Firebase", "Sensores Nativos", "API WhatsApp"],
     solution:
-      "Aplicación React Native con navegación declarativa, estado local optimizado y sincronización en segundo plano.",
-    results: ["Flujos de usuario validados.", "Sincronización estable.", "Base lista para escalar funcionalidades."],
+      "Programación de listeners en segundo plano para procesar señales del micrófono (decibeles) y movimientos acelerados, conectados a una interfaz discreta de hábitos.",
+    results: [
+      "Aplicación móvil funcional con lógica de monitoreo nativo en segundo plano.",
+      "Flujo de alertas automatizado para notificar a contactos de confianza.",
+    ],
     lessons: [
-      "Prototipar primero ahorra desarrollo después.",
-      "El rendimiento percibido es tan importante como el real.",
+      "El consumo de hardware en segundo plano exige una gestión estricta del uso de batería.",
+      "El diseño enfocado en la seguridad del usuario debe primar sobre la estética convencional.",
     ],
   },
   {
@@ -114,28 +131,26 @@ export const projects: Project[] = [
     category: "Web",
     role: "Desarrolladora web",
     summary:
-      "Dashboard web para visualización de datos ambientales urbanos, con mapas, gráficos y filtros dinámicos.",
+      "Plataforma web para la recepción, gestión y seguimiento de incidencias urbanas y requerimientos municipales.",
     description:
-      "Urban Sensor es una plataforma web que recopila y visualiza datos ambientales de sensores distribuidos en la ciudad. Permite explorar tendencias, comparar zonas y exportar informes.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Chart.js", "Mapbox"],
+      "Urban Sensor es un sistema enfocado en la gestión de incidencias municipales. Permite registrar, categorizar y realizar el seguimiento de reportes urbanos, facilitando la administración centralizada de solicitudes y la organización de la información.",
     problem:
-      "Los datos ambientales dispersos dificultan tomar decisiones urbanas informadas.",
+      "La dispersión de reportes y la falta de canales digitalizados dificultan la trazabilidad y la respuesta eficiente ante requerimientos en el entorno municipal.",
     objectives: [
-      "Visualizar datos de sensores en tiempo real.",
-      "Permitir comparar zonas y períodos.",
-      "Generar informes exportables.",
+      "Centralizar el registro y categorización de incidencias urbanas.",
+      "Proporcionar una interfaz intuitiva para el seguimiento de solicitudes.",
+      "Facilitar la gestión de datos e informes de estado para los administradores.",
     ],
-    architecture: ["Frontend Next.js", "API de sensores", "Visualización con Chart.js y Mapbox"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "API REST"],
     solution:
-      "Dashboard interactivo con filtros, gráficos y mapas, consumiendo una API de sensores normalizada.",
+      "Diseño e implementación de una plataforma web interactiva con formularios de reporte, filtros dinámicos por estado y paneles de visualización para la gestión municipal.",
     results: [
-      "Visualización clara de múltiples variables ambientales.",
-      "Exportación de informes en PDF/CSV.",
-      "Interfaz responsive y accesible.",
+      "Estructura modular para la gestión centralizada de requerimientos.",
+      "Interfaz responsive para la visualización y filtrado de reportes.",
     ],
     lessons: [
-      "Los datos sin contexto no generan insights.",
-      "La accesibilidad mejora la usabilidad para todos.",
+      "La categorización lógica de datos es indispensable para agilizar la gestión de incidencias.",
+      "Diseñar con foco en la usabilidad facilita la adopción de herramientas digitales en el ámbito público.",
     ],
   },
 ];
